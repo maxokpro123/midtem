@@ -1,0 +1,240 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #eee;
+    }
+    /*header*/
+    
+    .header>h3 {
+        padding: 1rem 1rem;
+        font-size: 22px;
+    }
+    /*body*/
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-top: -0.5rem;
+    }
+    
+    .wrapper div {
+        background-color: white;
+        padding: 2rem 1.5rem;
+        margin: 0.5rem;
+    }
+    /* profile */
+    
+    .wrapper .profile {
+        height: 630px;
+    }
+    
+    .wrapper .profile>img {
+        width: 100%;
+    }
+    
+    .wrapper .profile>hr {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        background-color: gray;
+    }
+    
+    .wrapper .profile p {
+        padding-top: 0.8rem;
+    }
+    /*sticky-menu*/
+    
+    .sticky {
+        position: sticky;
+        top: 0;
+        max-width: 100%;
+    }
+    /*main-content*/
+    
+    .content .main-content,
+    .content .form {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .content .main-content hr {
+        margin-top: 1rem;
+        background-color: gray;
+    }
+    
+    .content .main-content>p {
+        margin: 1rem 0;
+    }
+    
+    .content .main-content ul {
+        margin: 1rem 2.5rem;
+    }
+    
+    table,
+    td,
+    th {
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+    
+    th {
+        border-bottom: 2px solid black;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-color: black;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .click {
+        cursor: pointer;
+    }
+    
+    .info-couses {
+        display: none;
+        width: 100%;
+    }
+    
+    .content .main-content>div>span button {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+    
+    .content .main-content>div>span:nth-child(2) {
+        float: right;
+        margin-top: -0.5rem;
+    }
+    
+    tr th :first-child {
+        width: 20%;
+    }
+    
+    #width-th {
+        width: 20%;
+    }
+    /*form*/
+    
+    .content .form #email,
+    .form textarea {
+        width: 100%;
+        border: 1px solid gray;
+    }
+    
+    .content .form textarea {
+        height: 50px;
+    }
+    
+    .content .form button {
+        padding: 1rem 1.5rem;
+        background-color: #0043ffc9;
+        border-color: #0043ff38;
+        color: white;
+        cursor: pointer;
+    }
+    /*footer*/
+    
+    .footer {
+        background-color: black;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .footer>p {
+        display: block;
+        color: #fefdfd59;
+        margin: auto;
+        line-height: 100px;
+        text-align: center;
+    }
+    /*responsive*/
+    
+    @media all and (max-width:480px) {
+        .wrapper {
+            grid-template-columns: 100%;
+        }
+        .wrapper .profile {
+            height: auto;
+        }
+        .sticky {
+            position: relative;
+        }
+        .content .main-content>div>span:nth-child(2) {
+            display: block;
+            margin: 0.5rem -16%;
+        }
+    }
+    
+    @media only screen and (width:360px) {
+        .content .main-content>div>span:nth-child(2) {
+            display: block;
+            margin: 0.5rem -5%;
+        }
+    }
+    
+    @media only screen and (width:411px) {
+        .content .main-content>div>span:nth-child(2) {
+            display: block;
+            margin: 0.5rem 5%;
+        }
+    }
+    
+    @media only screen and (width:414px) {
+        .content .main-content>div>span:nth-child(2) {
+            display: block;
+            margin: 0.5rem 5%;
+        }
+    }
+    
+    @media only screen and (width:375px) {
+        .content .main-content>div>span:nth-child(2) {
+            display: block;
+            margin: 0.5rem -2%;
+        }
+    }
+    
+    @media only screen and (min-width:481px) and (max-width:765px) {
+        .wrapper {
+            grid-template-columns: 100%;
+        }
+        .wrapper div {
+            padding: 2rem 1rem;
+        }
+        .wrapper .profile {
+            height: auto;
+        }
+        .sticky {
+            position: relative;
+        }
+    }
+    
+    @media only screen and (width:768px) {
+        .wrapper {
+            grid-template-columns: 30% 70%;
+        }
+        .wrapper div {
+            padding: 2rem 1rem;
+        }
+        .wrapper .profile {
+            height: 520px;
+        }
+        .content .main-content>div>span:nth-child(2) {
+            margin-top: -0.5rem;
+        }
+    }
+    
+    @media only screen and (min-width:770px) and (max-width:1024px) {
+        .wrapper {
+            grid-template-columns: 30% 70%;
+        }
+        .wrapper div {
+            padding: 2rem 1rem;
+        }
+        .wrapper .profile {
+            height: 580px;
+        }
+    }
